@@ -16,6 +16,8 @@
 .text-light-gary{
 
     color: #727272;
+    /* font-size: 1rem;
+    font-weight: 500; */
 }
 
 .display-flex{
@@ -195,10 +197,61 @@ main{
 }
 
 
+/* star features section */
 
+#features-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.features {
+    gap: 130px;
+    
 
+}
+.fture-description{
+    margin-top: 24px;
+}
+.archi-container{
+    margin-top: 50px;
+}
+.feature-card{
+    box-shadow:0px 4px 30px 0px rgba(0, 0, 0, 0.06) ;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    /* margin-top: 30px; */
+    
 
-
+    
+    
+}
+.feature-card, .feature-title{
+    font-size: 1.25rem;
+    color: #131313;
+    font-weight: 600;
+   margin-top: 0px;
+   margin-bottom: 0px;
+  
+}
+.feature-card-description{
+font-size: 1rem;
+font-weight: 500;
+margin-top: 10px;
+}
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.arci-img img{
+    width: 100%;
+}
 
 /* start responsive part */
 @media screen and (max-width:776px) {
@@ -241,7 +294,14 @@ main{
         gap: 50px;
         justify-items: center;
     }
-    
+    .features{
+        flex-direction: column;
+    }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 50px;
+        padding:20px 20px ;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:992px) {
@@ -261,5 +321,12 @@ main{
         justify-items: center;
         gap: 24px;
     }
-
+    .features{
+        flex-direction: column;
+    }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 50px;
+        padding:20px 20px ;
+    }
 }
